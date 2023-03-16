@@ -8,8 +8,9 @@ export default function ApplicationRouter() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<ApplicationLayout />}>
-          <Route index element={<NavigationIndex />} />
           <Route path="/source"element={<NavigationSource />} />
+          <Route index element={<NavigationIndex />} />
+          
         </Route>
       </Routes>
     </BrowserRouter>
